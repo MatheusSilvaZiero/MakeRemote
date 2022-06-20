@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+*{
+
+  margin: 0;
+  padding: 0;
+
+}
 body {
 
   font-family: 'Open Sans', sans-serif;;
@@ -8,12 +14,12 @@ body {
 
 .navbar {
 
-    position: absolute;
+    
     height: 80px;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: aqua;
+   
 
 
 }
@@ -22,7 +28,7 @@ body {
 .navigation-menu {
 
     display: grid;
-    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-columns: 1fr 5fr 2fr;
 
 
 }
@@ -34,15 +40,12 @@ body {
 
 }
 
-.navigation-menu img::after{
 
-  
-}
 
-.navigation-menu div {
+.logo_menu {
 
   margin: 0;
-  margin-left: 30px;
+  margin-left: 40px;
   margin-top: 25px;
   padding: 0;
   padding-right: 60px;
@@ -51,39 +54,78 @@ body {
 
 .item-menu {
 
+  position: relative;
   display: flex;
   font-size: 12px;
   list-style: none;
   margin-top: 25px;
+  transition: none;
+  
+  
+
 }
 
+.item-menu ul{
 
+  border: 1px solid black;
+  border-radius: 6px;
+  transition: none;
 
-.item-menu ul {
+}
+
+.item-menu li {
 
   margin: 0;
-  padding-left: 0px;
-  padding-right: 35px;
+  padding-left: 35px;
+  padding-right: 0px;
 
 }
 
+.sub_item_menu {
+
+  height: 100px;
+  width: 80px;
+
+  display: none; 
+}
+
+.sub_item_menu li  {
+
+  list-style: none;
+  padding-top: 6px;
+  padding: 0px 10px 10px 10px;
+}
+
+
+.sub_item_menu li a:hover {
+
+  color: red;
+
+} 
+.item-menu li:hover .sub_item_menu {
+  
+  display: block;
+}
+
+/*---------------------------------------------------------- */
 .register-menu {
 
   display: flex;
   font-size: 12px;
   list-style: none;
+  margin-top: 25px;
   
 
 }
 
-.register-menu ul{
+.register-menu li {
 
-  margin: 0px;
-  padding-left: 35px;
+ padding-right: 30px;
+
 
 }
 
-.register-menu ul a:hover {
+.register2:hover {
 
 
     border: 1px solid black;
@@ -93,7 +135,7 @@ body {
 
 }
 
-.register-menu ul .register1:hover {
+.register1:hover {
 
   border: 1px solid black;
   border-radius: 10px;
@@ -116,8 +158,7 @@ a:hover {
 
 header {
 
-  position:absolute;
-  margin-top: 55px;
+  margin-top: 20px;
   width: 100%;
   height: 100%;
 
@@ -125,7 +166,7 @@ header {
 }
 .reading {
 
-  margin-top: 60px;
+  
   float: left;
   width: 50%;
 
@@ -136,8 +177,6 @@ header {
 
   padding-left: 170px;
   font-size: 50px;
-  
- 
   
 
 }
@@ -173,7 +212,7 @@ header {
   height: 400px;
   width: 330px;
   float: right;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-right: 100px;
 
 
@@ -190,6 +229,7 @@ header {
 .brands img {
 
   padding-right: 20px;
+  padding-top: 100px;
 
 
 }
