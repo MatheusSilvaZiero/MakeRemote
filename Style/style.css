@@ -84,22 +84,41 @@ body {
 .sub_item_menu {
 
   height: 100px;
-  width: 80px;
+   width: 100px; 
 
   display: none; 
 }
 
+.sub_item_menu-two {
+
+  height: 70px;
+  width: 80px;
+  padding-left: 15px;
+  
+
+}
+
+.sub_item_menu-two li {
+
+  padding-left: 10px;
+
+
+}
 .sub_item_menu li  {
 
   list-style: none;
-  padding-top: 6px;
-  padding: 0px 10px 10px 10px;
+  padding: 0px 6px 5px 3px;
 }
 
+.sub_item_menu li:nth-child(1) {
+
+  margin-top: 7px;
+
+}
 
 .sub_item_menu li a:hover {
 
-  color: red;
+  color: purple;
 
 } 
 .item-menu li:hover .sub_item_menu {
@@ -158,9 +177,9 @@ a:hover {
 
 header {
 
-  margin-top: 20px;
+  margin-top: 50px;
   width: 100%;
-  height: 100%;
+  height: 80vh;
 
 
 }
